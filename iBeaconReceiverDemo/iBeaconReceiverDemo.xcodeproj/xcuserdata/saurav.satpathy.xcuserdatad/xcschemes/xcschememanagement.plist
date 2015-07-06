@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>iBeaconDemo.xcscheme</key>
+		<key>iBeaconReceiverDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5F22167C1B37283000386FEF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5F2216951B37283000386FEF</key>
+		<key>D0FA38EF1B4A629E00A069F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
