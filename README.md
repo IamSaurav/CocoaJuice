@@ -7,5 +7,5 @@ This repository is all about sample codes for introduction of concepts which I f
 
 
 You can contact me via 
-email: matt@projectswithlove.com
+email: saurav.satpathy@icloud.com
 skype: sauravonskype
