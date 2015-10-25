@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F84F2299-2B4A-49A2-8CD7-7F53371B3D2B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Nothing</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>92B83CF94FC0D89A91CCDEB47E5504C68E5EDE57</key>
 		<string>https://github.com/IamSaurav/CocoaJuice.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Nothing/Nothing.xcodeproj/project.xcworkspace</string>
+	<string>Nothing/Nothing.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>92B83CF94FC0D89A91CCDEB47E5504C68E5EDE57</key>
