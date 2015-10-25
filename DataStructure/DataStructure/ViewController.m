@@ -24,8 +24,8 @@
     [linkedList insertObject:@"c"];
     
     NSLog(@"Object At Index: %@",[linkedList objectAtIndex:2]);
-    NSLog(@"Last Object : %@",linkedList.LastObject);
-    NSLog(@"First Object : %@",linkedList.FirstObject);
+    NSLog(@"Last Object : %@",[linkedList LastObject]);
+    NSLog(@"First Object : %@",[linkedList FirstObject]);
 
 }
 
