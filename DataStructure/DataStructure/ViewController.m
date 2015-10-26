@@ -23,9 +23,27 @@
     [linkedList insertObject:@"b"];
     [linkedList insertObject:@"c"];
     
-    NSLog(@"Object At Index: %@",[linkedList objectAtIndex:2]);
-    NSLog(@"Last Object : %@",[linkedList LastObject]);
+    
+    NSLog(@"Object At Index 0 : %@",[linkedList objectAtIndex:0]);
+    NSLog(@"Object At Index 1 : %@",[linkedList objectAtIndex:1]);
+    NSLog(@"Object At Index 2 : %@",[linkedList objectAtIndex:2]);
+    NSLog(@"Object At Index 3 : %@",[linkedList objectAtIndex:3]);
+
+    NSLog(@"Index Of Object : %d",[linkedList indexOfObject:@"a"]);
+    NSLog(@"Index Of Object : %d",[linkedList indexOfObject:@"b"]);
+    NSLog(@"Index Of Object : %d",[linkedList indexOfObject:@"c"]);
+    NSLog(@"Index Of Object : %d",[linkedList indexOfObject:@"d"]);
+
+    [linkedList insertObject:@"x" atIndex:0];
+    [linkedList insertObject:@"y" atIndex:1];
+    [linkedList insertObject:@"z" atIndex:2];
+    [linkedList insertObject:@"N" atIndex:4];
+
+    
     NSLog(@"First Object : %@",[linkedList FirstObject]);
+    NSLog(@"Last Object : %@",[linkedList LastObject]);
+    
+    NSLog(@"Total Count : %d",[linkedList Count]);
 
 }
 

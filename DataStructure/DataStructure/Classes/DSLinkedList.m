@@ -29,29 +29,76 @@
 - (void)insertObject:(id)anObject {
     
     if (anObject == nil) return;
-    
-    DSNode *node = [[DSNode alloc]init];
-    node.Value = anObject;
-    
-    if (self.FirstObject == nil) {
-        self.FirstNode = node;
-        self.LastNode = node;
-        self.FirstNode.NextNode = nil;
-        self.FirstNode.PrevNode = nil;
-    }
-    else
-    {
-        self.LastNode.NextNode = node;
-        self.LastNode = node;
-        self.LastNode.NextNode = nil;
-    }
-    self.ListCount++;
+    [self insertObject:anObject atIndex:self.ListCount];
 }
+
+- (void)insertObject:(id)anObject atIndex:(int)index
+{
+    if (anObject == nil) return;
+    
+    DSNode* prevNode = [self NodeAtIndex:index-1];
+    DSNode* nextNode = [self NodeAtIndex:index+1];
+    
+    DSNode *newNode = [[DSNode alloc]init];
+    newNode.Value = anObject;
+    
+    if (index==0) {
+        self.FirstNode = newNode;
+        if (self.FirstNode.NextNode==nil) {
+            self.FirstNode.NextNode = nextNode;
+        }
+        self.ListCount++;
+    }
+    else if(prevNode!=nil)
+    {
+        prevNode.NextNode = newNode;
+        newNode.NextNode = nextNode;
+        
+        self.ListCount++;
+        
+        if (nextNode==nil) {
+            self.LastNode = newNode;
+        }
+    }
+    
+}
+
+-(DSNode*)NodeAtIndex:(int)index
+{
+    int i = 0;
+    for (DSNode *node = self.FirstNode; node != nil; node = node.NextNode,i++)
+    {
+        if (index == i) {
+            return node;
+        }
+    }
+    return nil;
+}
+
+-(id)objectAtIndex:(int)index
+{
+    return [self NodeAtIndex:index].Value;
+}
+
+-(int)indexOfObject :(id)object
+{
+    
+    int i = 0;
+    for (DSNode *node = self.FirstNode; node != nil; node = node.NextNode,i++)
+    {
+        if ([node.Value  isEqual: object]) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+
 
 
 -(id)LastObject
 {
-   return self.LastNode.Value;
+    return self.LastNode.Value;
 }
 
 -(id)FirstObject
@@ -62,20 +109,6 @@
 -(int)Count
 {
     return self.ListCount;
-}
-
--(id)objectAtIndex:(int)index
-{
-    DSNode*node = self.FirstNode;
-    int a = 0;
-    
-    do {
-        if(node.NextNode ==nil) return nil;
-        node = node.NextNode;
-        a++;
-    } while (a!=index);
-    
-    return node;
 }
 
 @end

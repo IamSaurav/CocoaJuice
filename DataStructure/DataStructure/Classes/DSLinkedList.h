@@ -12,6 +12,8 @@
 
 @interface DSLinkedList : NSObject
 
+-(void)insertObject:(id)anObject atIndex:(int)index;
+-(int)indexOfObject :(id)object;
 -(id)objectAtIndex:(int)index;
 -(void)insertObject:(id)anObject;
 -(id)LastObject;
