@@ -34,7 +34,7 @@
 {
     if (count>0) {
         id temp = top.value;
-        top = top.next;
+        top = top.prev;
         count--;
         return  temp;
     }
