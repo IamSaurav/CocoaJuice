@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface CJNode : NSObject
-@property(nonatomic,strong)CJNode *prev;
+@property(nonatomic,strong)CJNode *next;
 @property(nonatomic,strong)id value;
 
--(instancetype)initWithObject :(id)Value :(CJNode*)Next;
+-(instancetype)initWithValue :(id)Value Next:(CJNode*)Next;
 @end
