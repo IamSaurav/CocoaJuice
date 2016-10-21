@@ -12,7 +12,7 @@ Steps :
  
  * will demonstrate adding image, gif and actions to notification.
 
-  * Tags
+ * Tags
     Xamarin 
     C# 
     UserNotifications
