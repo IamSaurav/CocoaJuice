@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{4D25FF3C-7101-46D0-92DA-23638D5FBF36}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UserNotification/ViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UserNotification/Info.plist">
     <Files>
-      <File FileName="UserNotification/AppDelegate.cs" Line="46" Column="3" />
+      <File FileName="UserNotification/AppDelegate.cs" Line="46" Column="1" />
       <File FileName="UserNotification/ViewController.cs" Line="17" Column="12" />
+      <File FileName="UserNotification/Info.plist" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
@@ -10,8 +11,8 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="../../../../../Volumes/Data/BirdziBitbucket/Birdzi.ios/Birdzi.ios/Classes/User Enrollment/Registration/View/BWRegistrationViewController.cs" line="644" offsetX="428" offsetY="9645" expression="barcode" liveUpdate="False" />
-    <Watch file="../../../../../Volumes/Data/BirdziBitbucket/Birdzi.ios/Birdzi.ios/Classes/Home/ParentViewController/BWParentViewController.cs" line="448" offsetX="589" offsetY="6705" expression="drawerItem.selector" liveUpdate="False" />
+    <Watch file="../../../BirdziBitbucket/Birdzi.ios/Birdzi.ios/Classes/User Enrollment/Registration/View/BWRegistrationViewController.cs" line="644" offsetX="428" offsetY="9645" expression="barcode" liveUpdate="False" />
+    <Watch file="../../../BirdziBitbucket/Birdzi.ios/Birdzi.ios/Classes/Home/ParentViewController/BWParentViewController.cs" line="448" offsetX="589" offsetY="6705" expression="drawerItem.selector" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MonoDevelop.Ide.ItemProperties.UserNotification PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
 </Properties>
