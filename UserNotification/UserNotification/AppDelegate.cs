@@ -50,12 +50,21 @@ namespace UserNotification
 		{
 			Console.WriteLine("WillPresentNotification" + notification.Description);
 			ShowAlert("UserNotification", notification.Description);
+			ClearNotifications();
 		}
 
 		public override void DidReceiveNotificationResponse(UNUserNotificationCenter center, UNNotificationResponse response, System.Action completionHandler)
 		{
+
 			Console.WriteLine("DidReceiveNotificationResponse : " + response.Notification.Description);
 			ShowAlert("UserNotification", response.Notification.Description);
+		}
+
+		public void ClearNotifications()
+		{
+			//Clear all old notification from notification pane 
+			UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
+			UIApplication.SharedApplication.CancelAllLocalNotifications();
 		}
 
 		private void ShowAlert(string title, string message)

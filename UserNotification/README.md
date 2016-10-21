@@ -1,31 +1,9 @@
-## Synopsis
+Hello, I'm Saurav. I make iOS, watchOS, macOS and tvOS apps in native and Xamarin platform. I've been a full-time Cocoa developer since 2011. 
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+This repository is all about sample codes for introduction of concepts which I find either difficult to understand or I think will be helpful to others.
 
-## Code Example
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
-## Motivation
-
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
-
-## Installation
-
-Provide code examples and explanations of how to get the project.
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+Please feel free to contact me for more information about me or my services.
+email: saurav.satpathy@icloud.com
+skype: sauravonskype
+blog: https://cocoajuice.wordpress.com
