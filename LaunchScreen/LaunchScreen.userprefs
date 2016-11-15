@@ -1,0 +1,13 @@
+﻿<Properties StartupConfiguration="{F00C8BAA-9A4D-4155-8215-26068FBBA544}|Default">
+  <MonoDevelop.Ide.ItemProperties.LaunchScreen PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.6e30e3595157fc29bafabe57400e0bb831ff3a95" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LaunchScreen/Info.plist">
+    <Files>
+      <File FileName="LaunchScreen/Info.plist" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

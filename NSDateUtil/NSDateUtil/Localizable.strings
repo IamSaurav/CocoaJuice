@@ -1,0 +1,8 @@
+
+
+
+//Notifications
+"Days" = "%d day(s) ago";
+"Hours" = "%d hour(s) ago";
+"Minutes" = "%d min(s) ago";
+"Seconds" = "%d sec(s) ago";

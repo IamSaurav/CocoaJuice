@@ -1,11 +1,5 @@
 ﻿<Properties StartupConfiguration="{4D25FF3C-7101-46D0-92DA-23638D5FBF36}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="UserNotification/Info.plist">
-    <Files>
-      <File FileName="UserNotification/AppDelegate.cs" Line="46" Column="1" />
-      <File FileName="UserNotification/ViewController.cs" Line="17" Column="12" />
-      <File FileName="UserNotification/Info.plist" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="effra-regular.ttf">
+            <string>Effra-Regular</string>
+            <string>Effra-Regular</string>
+            <string>Effra-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSDateUtil" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5YY-vi-b2n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Ar-kE-Iz0">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DateCell" id="m8d-Fq-hEI" customClass="CustomCell" customModule="NSDateUtil" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m8d-Fq-hEI" id="3CZ-Ig-W4z">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gQ-WL-yjF" userLabel="BgView">
+                                                    <rect key="frame" x="10" y="10" width="580" height="34"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4E-zs-OMZ" userLabel="Name">
+                                                            <rect key="frame" x="10" y="5" width="560" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="uk3-j5-ESc"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Effra-Regular" family="Effra" pointSize="17"/>
+                                                            <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0M-HK-7VA" userLabel="Address">
+                                                            <rect key="frame" x="10" y="27" width="560" height="42"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="42" id="MaJ-dr-yk8"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Effra-Regular" family="Effra" pointSize="16"/>
+                                                            <color key="textColor" red="0.53333333329999999" green="0.5450980392" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hG-af-1PU" userLabel="TimestampView">
+                                                            <rect key="frame" x="465" y="69" width="105" height="20"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TimerImage" translatesAutoresizingMaskIntoConstraints="NO" id="RG2-Md-exE" userLabel="TimerImageView">
+                                                                    <rect key="frame" x="10" y="0.0" width="20" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="20" id="l8I-VC-iid"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="4ZA-Lh-vqB" userLabel="TimestampLabel">
+                                                                    <rect key="frame" x="32" y="0.0" width="73" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="20" id="OIp-F2-3FV"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Effra-Regular" family="Effra" pointSize="14"/>
+                                                                    <color key="textColor" red="0.69411764710000001" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="4ZA-Lh-vqB" firstAttribute="leading" secondItem="RG2-Md-exE" secondAttribute="trailing" constant="2" id="Njw-Ed-Qlr"/>
+                                                                <constraint firstItem="4ZA-Lh-vqB" firstAttribute="height" secondItem="9hG-af-1PU" secondAttribute="height" id="T7Z-2Y-8gv"/>
+                                                                <constraint firstItem="RG2-Md-exE" firstAttribute="top" secondItem="9hG-af-1PU" secondAttribute="top" id="aGF-pA-EbG"/>
+                                                                <constraint firstAttribute="bottom" secondItem="RG2-Md-exE" secondAttribute="bottom" id="qYN-nT-l0W"/>
+                                                                <constraint firstAttribute="trailing" secondItem="4ZA-Lh-vqB" secondAttribute="trailing" id="r5j-sQ-EPv"/>
+                                                                <constraint firstAttribute="width" constant="105" id="tRc-rg-9TI"/>
+                                                                <constraint firstItem="4ZA-Lh-vqB" firstAttribute="centerY" secondItem="9hG-af-1PU" secondAttribute="centerY" id="tTY-Fd-Hu9"/>
+                                                                <constraint firstItem="RG2-Md-exE" firstAttribute="leading" secondItem="9hG-af-1PU" secondAttribute="leading" constant="10" id="yI5-8B-yEF"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="9hG-af-1PU" firstAttribute="trailing" secondItem="c0M-HK-7VA" secondAttribute="trailing" id="8AI-XS-pmj"/>
+                                                        <constraint firstItem="9hG-af-1PU" firstAttribute="top" secondItem="c0M-HK-7VA" secondAttribute="bottom" id="8vR-Tw-0j2"/>
+                                                        <constraint firstItem="c0M-HK-7VA" firstAttribute="trailing" secondItem="L4E-zs-OMZ" secondAttribute="trailing" id="H7K-5i-Dl1"/>
+                                                        <constraint firstItem="c0M-HK-7VA" firstAttribute="width" secondItem="L4E-zs-OMZ" secondAttribute="width" id="HJB-zK-6hg"/>
+                                                        <constraint firstItem="c0M-HK-7VA" firstAttribute="top" secondItem="L4E-zs-OMZ" secondAttribute="bottom" constant="1" id="c8S-JD-A4U"/>
+                                                        <constraint firstAttribute="trailing" secondItem="L4E-zs-OMZ" secondAttribute="trailing" constant="10" id="daG-Qn-prm"/>
+                                                        <constraint firstItem="L4E-zs-OMZ" firstAttribute="leading" secondItem="0gQ-WL-yjF" secondAttribute="leading" constant="10" id="oMn-R1-Rt5"/>
+                                                        <constraint firstItem="c0M-HK-7VA" firstAttribute="leading" secondItem="L4E-zs-OMZ" secondAttribute="leading" id="rfG-bh-NzL"/>
+                                                        <constraint firstItem="L4E-zs-OMZ" firstAttribute="top" secondItem="0gQ-WL-yjF" secondAttribute="top" constant="5" id="tgn-ra-QKr"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="0gQ-WL-yjF" firstAttribute="leading" secondItem="3CZ-Ig-W4z" secondAttribute="leading" constant="10" id="5uM-mG-z6Z"/>
+                                                <constraint firstAttribute="bottom" secondItem="0gQ-WL-yjF" secondAttribute="bottom" id="O78-G4-p9J"/>
+                                                <constraint firstItem="0gQ-WL-yjF" firstAttribute="top" secondItem="3CZ-Ig-W4z" secondAttribute="top" constant="10" id="SjG-Wo-dqO"/>
+                                                <constraint firstAttribute="trailing" secondItem="0gQ-WL-yjF" secondAttribute="trailing" constant="10" id="dQl-YR-0du"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="c0M-HK-7VA" id="nHp-6n-INN"/>
+                                            <outlet property="nameLabel" destination="L4E-zs-OMZ" id="V99-cG-bmy"/>
+                                            <outlet property="timeLabel" destination="4ZA-Lh-vqB" id="i8U-os-dkL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="N9K-SE-Dwi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qYf-QJ-wCR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.97254901959999995" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Ar-kE-Iz0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hmo-17-Vq4"/>
+                            <constraint firstItem="9Ar-kE-Iz0" firstAttribute="leading" secondItem="5YY-vi-b2n" secondAttribute="leading" id="oB5-hc-5S4"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ar-kE-Iz0" secondAttribute="trailing" id="wDs-x6-FTc"/>
+                            <constraint firstItem="9Ar-kE-Iz0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="xKl-zP-ugY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TimerImage" width="20" height="20"/>
+    </resources>
+</document>
