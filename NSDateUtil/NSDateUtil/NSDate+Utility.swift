@@ -26,17 +26,16 @@ extension NSDate {
         return formatter.dateFromString(dateStr)!
     }
     
-    public static func timeAgo (fromDate : NSDate = NSDate(), toDate : NSDate) -> String
+    public static func timeAgo (toDate : NSDate = NSDate(), fromDate : NSDate) -> String
     {
         var ago : String = String()
         let fromDateUTC = toUTC(fromDate)
         let toDateUTC = toUTC(toDate)
-        var secsAgo = Int(toDateUTC.timeIntervalSinceDate(fromDateUTC))
-        if(secsAgo<0)
+        if(fromDateUTC.compare(toDateUTC) == .OrderedDescending)
         {
             return ago
         }
-        secsAgo = abs(secsAgo)
+        let secsAgo = abs(Int(toDateUTC.timeIntervalSinceDate(fromDateUTC)))
         let daysAgo = secsAgo/(secondsInMinute*minuteInHour*hourInDay)
         let hoursAgo = secsAgo/(secondsInMinute*minuteInHour)
         let minsAgo = secsAgo/(secondsInMinute)

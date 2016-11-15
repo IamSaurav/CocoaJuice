@@ -31,9 +31,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCellWithIdentifier("DateCell", forIndexPath: indexPath) as! CustomCell
         cell.nameLabel.text = "CocoaJuice"
         cell.addressLabel.text = "Cupertino, California"
-        let fromDate : NSDate = NSDate().dateByAddingTimeInterval(-3600*2*24);
+        let fromDate : NSDate = NSDate().dateByAddingTimeInterval(-3600*2);
         let toDate : NSDate = NSDate();
-        cell.timeLabel.text = NSDate.timeAgo(fromDate, toDate: toDate)
+        cell.timeLabel.text = NSDate.timeAgo(toDate, fromDate: fromDate)
         return cell
     }
     
