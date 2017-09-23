@@ -15,6 +15,8 @@
 		D088E8F61C4D09CB00DC2925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D088E8F41C4D09CB00DC2925 /* LaunchScreen.storyboard */; };
 		D088E8FF1C4D09F700DC2925 /* CJStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D088E8FE1C4D09F700DC2925 /* CJStack.m */; };
 		D088E9021C4D0A7500DC2925 /* CJNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D088E9011C4D0A7500DC2925 /* CJNode.m */; };
+		E0AD80191C8B0B0F00E1D2EA /* CJQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD80181C8B0B0F00E1D2EA /* CJQueue.m */; };
+		E0AD801C1C8B0B2400E1D2EA /* CJQueueNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD801B1C8B0B2400E1D2EA /* CJQueueNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		D088E8FE1C4D09F700DC2925 /* CJStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJStack.m; sourceTree = "<group>"; };
 		D088E9001C4D0A7500DC2925 /* CJNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJNode.h; sourceTree = "<group>"; };
 		D088E9011C4D0A7500DC2925 /* CJNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJNode.m; sourceTree = "<group>"; };
+		E0AD80171C8B0B0F00E1D2EA /* CJQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJQueue.h; sourceTree = "<group>"; };
+		E0AD80181C8B0B0F00E1D2EA /* CJQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJQueue.m; sourceTree = "<group>"; };
+		E0AD801A1C8B0B2400E1D2EA /* CJQueueNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJQueueNode.h; sourceTree = "<group>"; };
+		E0AD801B1C8B0B2400E1D2EA /* CJQueueNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJQueueNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +70,12 @@
 		D088E8E51C4D09CA00DC2925 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				E0AD80131C8B0AC600E1D2EA /* Queue */,
 				D088E8E91C4D09CA00DC2925 /* AppDelegate.h */,
 				D088E8EA1C4D09CA00DC2925 /* AppDelegate.m */,
 				D088E8EC1C4D09CA00DC2925 /* ViewController.h */,
 				D088E8ED1C4D09CA00DC2925 /* ViewController.m */,
-				D088E9001C4D0A7500DC2925 /* CJNode.h */,
-				D088E9011C4D0A7500DC2925 /* CJNode.m */,
-				D088E8FD1C4D09F700DC2925 /* CJStack.h */,
-				D088E8FE1C4D09F700DC2925 /* CJStack.m */,
+				E0AD80121C8B0AB900E1D2EA /* Stack */,
 				D088E8EF1C4D09CB00DC2925 /* Main.storyboard */,
 				D088E8F21C4D09CB00DC2925 /* Assets.xcassets */,
 				D088E8F41C4D09CB00DC2925 /* LaunchScreen.storyboard */,
@@ -87,6 +91,28 @@
 				D088E8E71C4D09CA00DC2925 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0AD80121C8B0AB900E1D2EA /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				D088E9001C4D0A7500DC2925 /* CJNode.h */,
+				D088E9011C4D0A7500DC2925 /* CJNode.m */,
+				D088E8FD1C4D09F700DC2925 /* CJStack.h */,
+				D088E8FE1C4D09F700DC2925 /* CJStack.m */,
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
+		E0AD80131C8B0AC600E1D2EA /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD80171C8B0B0F00E1D2EA /* CJQueue.h */,
+				E0AD80181C8B0B0F00E1D2EA /* CJQueue.m */,
+				E0AD801A1C8B0B2400E1D2EA /* CJQueueNode.h */,
+				E0AD801B1C8B0B2400E1D2EA /* CJQueueNode.m */,
+			);
+			name = Queue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D088E8EE1C4D09CA00DC2925 /* ViewController.m in Sources */,
+				E0AD80191C8B0B0F00E1D2EA /* CJQueue.m in Sources */,
 				D088E8EB1C4D09CA00DC2925 /* AppDelegate.m in Sources */,
 				D088E8E81C4D09CA00DC2925 /* main.m in Sources */,
 				D088E8FF1C4D09F700DC2925 /* CJStack.m in Sources */,
 				D088E9021C4D0A7500DC2925 /* CJNode.m in Sources */,
+				E0AD801C1C8B0B2400E1D2EA /* CJQueueNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

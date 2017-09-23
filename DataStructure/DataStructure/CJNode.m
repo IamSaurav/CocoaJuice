@@ -9,14 +9,14 @@
 #import "CJNode.h"
 
 @implementation CJNode
-@synthesize value,next;
+@synthesize value,prev;
 
--(instancetype)initWithValue :(id)Value Next:(CJNode*)Next
+-(instancetype)initWithValue :(id)Value Previous:(CJNode *)previous
 {
     self = [super init];
     if (self!=nil) {
         self.value = Value;
-        self.next = Next;
+        self.prev = previous;
     }
     
     return self;

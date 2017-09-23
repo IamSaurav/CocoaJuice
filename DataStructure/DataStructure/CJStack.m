@@ -27,7 +27,7 @@
 }
 
 -(void) push: (id) value {
-    top = [[CJNode alloc] initWithValue:value Next:top];
+    top = [[CJNode alloc] initWithValue:value Previous:top];
     count++;
 }
 
@@ -35,7 +35,7 @@
 {
     if (count>0) {
         id temp = top.value;
-        top = top.next;
+        top = top.prev;
         count--;
         return  temp;
     }
@@ -56,11 +56,11 @@
 {
     NSMutableArray *castedArray = [[NSMutableArray alloc]init];
     CJNode *tempObj = top;
-    while (tempObj.next != nil)
+    while (tempObj.prev != nil)
     {
         NSLog(@"%@",tempObj.value);
         [castedArray addObject:tempObj.value];
-        tempObj = tempObj.next;
+        tempObj = tempObj.prev;
     }
     return castedArray;
 }
@@ -68,7 +68,7 @@
 
 -(NSArray*)reverseStack
 {
-    [self reverse:top NextNode:top.next];
+    [self reverse:top NextNode:top.prev];
     return [self toArray];
 }
 
@@ -77,8 +77,8 @@
     CJNode *tempObj;
     if (nextNode != nil)
     {
-        tempObj = nextNode.next;
-        nextNode.next = topNode;
+        tempObj = nextNode.prev;
+        nextNode.prev = topNode;
         topNode = nextNode;
         nextNode = tempObj;
         top = topNode;
